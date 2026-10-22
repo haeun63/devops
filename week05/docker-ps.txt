@@ -1,0 +1,5 @@
+CONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS                      PORTS                                     NAMES
+2c80c8604ccb   nginx           "/docker-entrypoint.…"   14 seconds ago   Up 14 seconds               0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   web
+a50d98f7a719   guestbook-web   "python app.py"          9 days ago       Up 17 minutes (unhealthy)   5000/tcp                                  guestbook-web-2
+003a1f1fef46   guestbook-web   "python app.py"          9 days ago       Up 17 minutes (unhealthy)   5000/tcp                                  guestbook-web-3
+5fd0aed128d8   guestbook-web   "python app.py"          9 days ago       Up 17 minutes (unhealthy)   5000/tcp                                  guestbook-web-1
