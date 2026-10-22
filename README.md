@@ -8,3 +8,4 @@
 - [3주차 - 셸 스크립팅](./week03/)
 - [4주차 - 자동화와 협업 및 네트워크](./week04/)
 - [5주차 - Docker 및 GitHub Issue](./week05/)
+- [7주차 - Docker Compose](./week07/)
