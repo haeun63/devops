@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <style>
+    :root { --brand: {{ color }}; }
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, "Segoe UI", "Malgun Gothic", sans-serif;
+           background: #f5f6f8; margin: 0; padding: 40px 16px; color: #222; }
+    .wrap { max-width: 640px; margin: 0 auto; }
+    h1 { color: var(--brand); margin: 0 0 4px; }
+    .meta { font-size: 13px; color: #777; margin-bottom: 24px; }
+    .badge { display: inline-block; background: var(--brand); color: #fff;
+             padding: 2px 8px; border-radius: 10px; font-size: 12px; margin-right: 6px; }
+    .card { background: #fff; border-radius: 10px; padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,.08); margin-bottom: 16px; }
+    input, textarea { width: 100%; padding: 10px; margin-bottom: 8px;
+                      border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
+    button { background: var(--brand); color: #fff; border: 0; padding: 10px 20px;
+             border-radius: 6px; font-size: 14px; cursor: pointer; }
+    .entry { border-bottom: 1px solid #eee; padding: 12px 0; }
+    .entry:last-child { border-bottom: 0; }
+    .entry .who { font-weight: 600; color: var(--brand); }
+    .entry .when { font-size: 12px; color: #999; margin-left: 6px; }
+    .empty { color: #999; text-align: center; padding: 20px 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>{{ title }}</h1>
+    <div class="meta">
+      <span class="badge">저장소: {{ storage }}</span>
+      <span class="badge">Pod/Host: {{ hostname }}</span>
+      방문 {{ visits }}회
+    </div>
+
+    <div class="card">
+      <form action="/add" method="post">
+        <input name="name" placeholder="이름" maxlength="20">
+        <textarea name="message" placeholder="한마디 남기기" rows="2" maxlength="200"></textarea>
+        <button type="submit">남기기</button>
+      </form>
+    </div>
+
+    <div class="card">
+      {% if entries %}
+        {% for e in entries %}
+          <div class="entry">
+            <span class="who">{{ e.name }}</span>
+            <span class="when">{{ e.time }}</span>
+            <div>{{ e.message }}</div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="empty">정하은에게 남기고 싶은 말을 적어주세요!</div>
+      {% endif %}
+    </div>
+  </div>
+</body>
+</html>

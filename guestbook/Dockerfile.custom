@@ -1,0 +1,3 @@
+FROM ghcr.io/haeun63/guestbook:v1
+ENV APP_TITLE="커스텀 방명록" \
+    THEME_COLOR="#7C9A82"

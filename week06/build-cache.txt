@@ -1,0 +1,46 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 534B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 120B done
+#3 DONE 0.0s
+
+#4 [1/6] FROM docker.io/library/python:3.12-slim@sha256:cb33f7f771ecec2ef1225cf39b159591a040391bd73e4c01f00fdfc4c47611d2
+#4 resolve docker.io/library/python:3.12-slim@sha256:cb33f7f771ecec2ef1225cf39b159591a040391bd73e4c01f00fdfc4c47611d2 0.0s done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 575B done
+#5 DONE 0.0s
+
+#6 [2/6] WORKDIR /app
+#6 CACHED
+
+#7 [4/6] RUN pip install --no-cache-dir -r requirements.txt
+#7 CACHED
+
+#8 [5/6] COPY . .
+#8 CACHED
+
+#9 [3/6] COPY requirements.txt .
+#9 CACHED
+
+#10 [6/6] RUN useradd -m appuser
+#10 CACHED
+
+#11 exporting to image
+#11 exporting layers done
+#11 exporting manifest sha256:24cd216e96a421b528adaca0d4dbf96197f990cccc83dfbacd105bc27fc70742 done
+#11 exporting config sha256:015e67f424113cdcc3a3c7e109d307a0c6dd93513dd0403084744b83fc456572 done
+#11 exporting attestation manifest sha256:02f4dccfe415cbe1f4d6617b5b6674fdda7b9e8e75651faf2ed172166d7cd4e8 done
+#11 exporting manifest list sha256:fcf3e4efcc5876e4c4f3dd938cdd44ad201bb71b3f6c5c82166b3568c3af0819
+#11 exporting manifest list sha256:fcf3e4efcc5876e4c4f3dd938cdd44ad201bb71b3f6c5c82166b3568c3af0819 done
+#11 naming to docker.io/library/guestbook:v1.1 done
+#11 unpacking to docker.io/library/guestbook:v1.1 0.0s done
+#11 DONE 0.1s

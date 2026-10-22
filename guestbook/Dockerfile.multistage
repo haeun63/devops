@@ -1,0 +1,21 @@
+# ---------------------------------------------------------------
+# 빌드 도구는 builder 단계에만 남기고, 최종 이미지에는 결과물만 담는다.
+#   docker build -f Dockerfile.multistage -t myapp:slim .
+#   docker images | grep myapp     ← 용량을 비교해 보세요
+# ---------------------------------------------------------------
+FROM python:3.12-slim AS builder
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir --user -r requirements.txt
+
+FROM python:3.12-slim
+WORKDIR /app
+COPY --from=builder /root/.local /home/appuser/.local
+COPY . .
+RUN useradd -m appuser && chown -R appuser:appuser /home/appuser/.local
+USER appuser
+ENV PATH=/home/appuser/.local/bin:$PATH
+ENV APP_TITLE="InhaTC DevOps 방명록" \
+    THEME_COLOR="#0054A6"
+EXPOSE 5000
+CMD ["python", "app.py"]
