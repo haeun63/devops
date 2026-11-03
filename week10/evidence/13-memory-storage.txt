@@ -1,0 +1,22 @@
+{"post_http": 200, "sample": "Memory storage week10 temporary check"}
+{"same_pod_entries": {"count": 1, "entries": [{"message": "Memory storage week10 temporary check", "name": "week10-check", "time": "2026-11-03 01:51"}]}}
+{"request": 1, "hostname": "guestbook-54cd66947c-zct9j", "sample_visible": false, "memory_storage": true}
+{"request": 2, "hostname": "guestbook-54cd66947c-zl9pg", "sample_visible": true, "memory_storage": true}
+{"request": 3, "hostname": "guestbook-54cd66947c-zct9j", "sample_visible": false, "memory_storage": true}
+{"request": 4, "hostname": "guestbook-54cd66947c-zl9pg", "sample_visible": true, "memory_storage": true}
+{"request": 5, "hostname": "guestbook-54cd66947c-zct9j", "sample_visible": false, "memory_storage": true}
+{"request": 6, "hostname": "guestbook-54cd66947c-zl9pg", "sample_visible": true, "memory_storage": true}
+{"request": 7, "hostname": "guestbook-54cd66947c-zct9j", "sample_visible": false, "memory_storage": true}
+{"request": 8, "hostname": "guestbook-54cd66947c-zl9pg", "sample_visible": true, "memory_storage": true}
+{"request": 9, "hostname": "guestbook-54cd66947c-zl9pg", "sample_visible": true, "memory_storage": true}
+{"request": 10, "hostname": "guestbook-54cd66947c-zct9j", "sample_visible": false, "memory_storage": true}
+{"request": 11, "hostname": "guestbook-54cd66947c-zl9pg", "sample_visible": true, "memory_storage": true}
+{"request": 12, "hostname": "guestbook-54cd66947c-zct9j", "sample_visible": false, "memory_storage": true}
+{"request": 13, "hostname": "guestbook-54cd66947c-zl9pg", "sample_visible": true, "memory_storage": true}
+{"request": 14, "hostname": "guestbook-54cd66947c-zl9pg", "sample_visible": true, "memory_storage": true}
+{"request": 15, "hostname": "guestbook-54cd66947c-zl9pg", "sample_visible": true, "memory_storage": true}
+{"request": 16, "hostname": "guestbook-54cd66947c-zct9j", "sample_visible": false, "memory_storage": true}
+{"request": 17, "hostname": "guestbook-54cd66947c-zct9j", "sample_visible": false, "memory_storage": true}
+{"request": 18, "hostname": "guestbook-54cd66947c-zct9j", "sample_visible": false, "memory_storage": true}
+{"request": 19, "hostname": "guestbook-54cd66947c-zl9pg", "sample_visible": true, "memory_storage": true}
+{"request": 20, "hostname": "guestbook-54cd66947c-zl9pg", "sample_visible": true, "memory_storage": true}

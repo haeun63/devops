@@ -1,0 +1,7 @@
+deployment.apps/guestbook
+REVISION  CHANGE-CAUSE
+1         <none>
+2         <none>
+3         <none>
+4         v1: duplicate container removed, baseline restored
+5         v2: title changed

@@ -1,0 +1,14 @@
+deployment.apps/guestbook configured
+Waiting for deployment "guestbook" rollout to finish: 2 of 3 updated replicas are available...
+Waiting for deployment "guestbook" rollout to finish: 2 of 3 updated replicas are available...
+deployment "guestbook" successfully rolled out
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES                         SELECTOR
+deployment.apps/guestbook   3/3     3            3           7d16h   web          ghcr.io/haeun63/guestbook:v1   app=guestbook
+
+NAME                             READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+pod/guestbook-54cd66947c-rztcv   1/1     Running   0          8s    10.244.0.37   minikube   <none>           <none>
+pod/guestbook-54cd66947c-zct9j   1/1     Running   0          12m   10.244.0.36   minikube   <none>           <none>
+pod/guestbook-54cd66947c-zl9pg   1/1     Running   0          12m   10.244.0.35   minikube   <none>           <none>
+deployment.apps/guestbook configured
+deployment "guestbook" successfully rolled out
+deployment.apps/guestbook unchanged

@@ -1,0 +1,9 @@
+deployment.apps/guestbook
+REVISION  CHANGE-CAUSE
+1         <none>
+2         <none>
+3         <none>
+5         v2: title changed
+6         v1: 롤백 완료
+10        v2: YAML image 변경 후 apply
+11        v1: YAML 복원 후 apply, 실습 완료

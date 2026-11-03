@@ -1,0 +1,93 @@
+apiVersion: v1
+items:
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints:
+  - addresses:
+    - 10.244.0.10
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: guestbook-76546cfc9-m8tk7
+      namespace: default
+      uid: 27e8df69-5cf2-4972-947c-2ead49ee4d84
+  - addresses:
+    - 10.244.0.11
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: guestbook-76546cfc9-pb59m
+      namespace: default
+      uid: 50bf12a2-38fe-4466-ac8e-19ad5c051a71
+  - addresses:
+    - 10.244.0.16
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: guestbook-76546cfc9-chtsr
+      namespace: default
+      uid: 49eccfa7-28a8-4165-ba1c-dbfb7d09e37f
+  - addresses:
+    - 10.244.0.17
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: guestbook-76546cfc9-v5gmc
+      namespace: default
+      uid: 04c9a447-b009-4a58-99b9-452f64c87730
+  - addresses:
+    - 10.244.0.15
+    conditions:
+      ready: true
+      serving: true
+      terminating: false
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: guestbook-76546cfc9-l5vht
+      namespace: default
+      uid: 3f35083f-305f-43e3-b19e-68add0abd348
+  kind: EndpointSlice
+  metadata:
+    annotations:
+      endpoints.kubernetes.io/last-change-trigger-time: "2026-11-03T01:31:48Z"
+    creationTimestamp: "2026-11-03T01:16:32Z"
+    generateName: guestbook-
+    generation: 32
+    labels:
+      endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+      kubernetes.io/service-name: guestbook
+    name: guestbook-495bc
+    namespace: default
+    ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: guestbook
+      uid: 4aad3d65-4fb0-4e9a-baf4-d45599e0c192
+    resourceVersion: "9597"
+    uid: 75bedc2a-900d-4805-8ef4-8dd44cb60051
+  ports:
+  - name: ""
+    port: 5000
+    protocol: TCP
+kind: List
+metadata:
+  resourceVersion: ""

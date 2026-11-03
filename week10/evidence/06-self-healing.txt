@@ -1,0 +1,9 @@
+Deleted pod: guestbook-76546cfc9-chtsr
+Deleted UID: 49eccfa7-28a8-4165-ba1c-dbfb7d09e37f
+pod "guestbook-76546cfc9-chtsr" deleted from default namespace
+NAME                        READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+guestbook-76546cfc9-l5vht   1/1     Running   0          67s     10.244.0.15   minikube   <none>           <none>
+guestbook-76546cfc9-m8tk7   1/1     Running   0          4m36s   10.244.0.10   minikube   <none>           <none>
+guestbook-76546cfc9-pb59m   1/1     Running   0          4m33s   10.244.0.11   minikube   <none>           <none>
+guestbook-76546cfc9-pb5qm   1/1     Running   0          38s     10.244.0.18   minikube   <none>           <none>
+guestbook-76546cfc9-v5gmc   1/1     Running   0          67s     10.244.0.17   minikube   <none>           <none>
