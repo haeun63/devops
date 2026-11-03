@@ -1,6 +1,0 @@
-NAME                        READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
-guestbook-76546cfc9-chtsr   1/1     Running   0          4s      10.244.0.16   minikube   <none>           <none>
-guestbook-76546cfc9-l5vht   1/1     Running   0          4s      10.244.0.15   minikube   <none>           <none>
-guestbook-76546cfc9-m8tk7   1/1     Running   0          3m33s   10.244.0.10   minikube   <none>           <none>
-guestbook-76546cfc9-pb59m   1/1     Running   0          3m30s   10.244.0.11   minikube   <none>           <none>
-guestbook-76546cfc9-v5gmc   1/1     Running   0          4s      10.244.0.17   minikube   <none>           <none>

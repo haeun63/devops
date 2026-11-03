@@ -1,9 +1,0 @@
-minikube
-NAME       STATUS   ROLES           AGE     VERSION   INTERNAL-IP    EXTERNAL-IP   OS-IMAGE                         KERNEL-VERSION                              CONTAINER-RUNTIME
-minikube   Ready    control-plane   7d17h   v1.37.0   192.168.49.2   <none>        Debian GNU/Linux 12 (bookworm)   6.18.33.2-microsoft-standard-WSL2 (amd64)   containerd://2.3.4
-services                            svc          v1                                true         Service
-deployments                         deploy       apps/v1                           true         Deployment
-NAME                         READY   STATUS    RESTARTS   AGE   LABELS
-guestbook-54cd66947c-zct9j   1/1     Running   0          12m   app=guestbook,pod-template-hash=54cd66947c
-guestbook-54cd66947c-zl9pg   1/1     Running   0          12m   app=guestbook,pod-template-hash=54cd66947c
-deployment.apps/guestbook unchanged (server dry run)
