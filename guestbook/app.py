@@ -115,7 +115,7 @@ def api_entries():
 
 @app.route("/healthz")
 def healthz():
-    return jsonify({"status": "ok", "hostname": HOSTNAME}), 200
+    return jsonify({"status": "ok", "hostname": HOSTNAME}), 500, 200
 
 
 @app.route("/readyz")
