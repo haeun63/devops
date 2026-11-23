@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: ghcr.io/haeun63/guestbook:v2
+          image: ghcr.io/haeun63/guestbook:daa59b7
           imagePullPolicy: IfNotPresent
 
           ports:
